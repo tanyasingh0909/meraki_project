@@ -29,4 +29,3 @@ Bite&Dine is a restaurant website designed to provide an exceptional online dini
 - React
 - Font Awesome
 
-Bite & Dine is a modern restaurant website built with Next.js and Tailwind CSS. It features a sleek, responsive UI with advanced functionalities such as a Dark Mode Toggle and a Dynamic Shopping Cart powered by React Context.
