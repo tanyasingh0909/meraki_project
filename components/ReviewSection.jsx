@@ -64,7 +64,7 @@ const ReviewSection = () => {
               <div>
                 <h3 className="text-xl text-sunset font-bold">Jane Kim</h3>
                 <div className="flex space-x-1">
-                  <i className="fas fa-star text-jellyBeanBlue"></i>
+                  <i className="fas fa-star text-sunset"></i>
                   <i className="fas fa-star text-jellyBeanBlue"></i>
                   <i className="fas fa-star text-jellyBeanBlue"></i>
                   <i className="fas fa-star text-jellyBeanBlue"></i>
@@ -90,11 +90,11 @@ const ReviewSection = () => {
               <div>
                 <h3 className="text-xl text-sunset font-bold">Ronald Doe</h3>
                 <div className="flex space-x-1">
-                  <i className="fas fa-star text-jellyBeanBlue"></i>
-                  <i className="fas fa-star text-jellyBeanBlue"></i>
-                  <i className="fas fa-star text-jellyBeanBlue"></i>
-                  <i className="fas fa-star text-jellyBeanBlue"></i>
-                  <i className="fas fa-star-half-alt text-jellyBeanBlue"></i>
+                  <i className="fas fa-star text-sunset"></i>
+                  <i className="fas fa-star text-sunset"></i>
+                  <i className="fas fa-star text-sunset"></i>
+                  <i className="fas fa-star text-sunset"></i>
+                  <i className="fas fa-star-half-alt text-sunset"></i>
                 </div>
               </div>
             </div>

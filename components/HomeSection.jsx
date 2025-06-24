@@ -1,52 +1,50 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 
 const HomeSection = () => {
+  const [animateLogo, setAnimateLogo] = useState(false);
+
+  useEffect(() => {
+    setAnimateLogo(true); // Animate on render
+  }, []);
+
   return (
     <section
       id="home"
-      className="pt-32 flex flex-col md:flex-row items-center justify-between px-8 pb-32"
+      className="pt-40 pb-40 px-6 md:px-20 bg-black text-white"
     >
-      <div className="flex-1">
-        <h2 className="text-5xl text-sunset font-bold mb-4">
-          Satisfy Your Cravings <br />
-          Anytime, Anywhere
-        </h2>
-        <p className="text-lg text-lightColor mb-6">
-          Craving something delicious? We've got you covered. Freshly prepared
-          meals, delivered right to your doorstep.
-        </p>
-        <button className="bg-sunset text-white px-6 py-3 rounded hover:bg-jellyBeanBlue transition">
-          Discover Food
-        </button>
-      </div>
-      <div className="flex-1 relative mt-8 md:mt-0 w-full h-[400px]">
-        <img
-          src="/images/image1.png"
-          alt="Food 1"
-          className="absolute w-[80%] h-auto rounded object-cover"
-          style={{
-            animation:
-              "imageSwitch 15s steps(1) infinite 0s, rotate 3s linear infinite",
-          }}
-        />
-        <img
-          src="/images/image5.png"
-          alt="Food 2"
-          className="absolute w-[80%] h-auto rounded object-cover"
-          style={{
-            animation:
-              "imageSwitch 15s steps(1) infinite 5s, rotate 3s linear infinite",
-          }}
-        />
-        <img
-          src="/images/image4.png"
-          alt="Food 3"
-          className="absolute w-[80%] h-auto rounded object-cover"
-          style={{
-            animation:
-              "imageSwitch 15s steps(1) infinite 10s, rotate 3s linear infinite",
-          }}
-        />
+      <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-16">
+        {/* Left: Text */}
+        <div className="flex-1 text-center md:text-left">
+          <h2 className="text-5xl md:text-6xl text-sunset font-extrabold mb-8 leading-tight">
+            Welcome to <br />
+            MERAKI
+          </h2>
+          <p className="text-xl text-gray-400 mb-8 max-w-2xl">
+            Craving something delicious? We've got you covered. Freshly prepared
+            meals, delivered right to your doorstep.
+          </p>
+          <a
+            href="#about"
+            className="inline-block bg-sunset text-white text-lg px-8 py-4 rounded-lg hover:bg-jellyBeanBlue transition"
+          >
+            Know About Us
+          </a>
+        </div>
+
+        {/* Right: Extra Large Animated Logo */}
+        <div className="flex-1 flex justify-center">
+          <div
+            className={`w-[28rem] h-[28rem] rounded-full overflow-hidden shadow-2xl border-[8px] border-sunset transform transition-all duration-1000 ease-out ${
+              animateLogo ? "opacity-100 scale-100" : "opacity-0 scale-0"
+            }`}
+          >
+            <img
+              src="/images/meraki_logo.png"
+              alt="Meraki Logo"
+              className="object-cover w-full h-full"
+            />
+          </div>
+        </div>
       </div>
     </section>
   );
