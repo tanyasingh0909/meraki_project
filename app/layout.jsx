@@ -1,8 +1,8 @@
 import "./globals.css";
 
 export const metadata = {
-  title: "Bite&Dine - Good Food, Great Mood",
-  description: "Restaurant website built with Next.js and Tailwind CSS",
+  title: "Meraki-Culinary Arts Society,IITK",
+  description: "We are the community of food lovers who love to cook and try out different cuisines all over the world.",
 };
 
 export default function RootLayout({ children }) {
