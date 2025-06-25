@@ -4,7 +4,7 @@ const HomeSection = () => {
   const [animateLogo, setAnimateLogo] = useState(false);
 
   useEffect(() => {
-    setAnimateLogo(true); // Animate on render
+    setAnimateLogo(true);            // animate once on mount
   }, []);
 
   return (
@@ -16,22 +16,23 @@ const HomeSection = () => {
         {/* Left: Text */}
         <div className="flex-1 text-center md:text-left">
           <h2 className="text-5xl md:text-6xl text-sunset font-extrabold mb-8 leading-tight">
-            Welcome to <br />
-            MERAKI
+            Welcome to <br /> MERAKI
           </h2>
+
           <p className="text-xl text-gray-400 mb-8 max-w-2xl">
-            Craving something delicious? We've got you covered. Freshly prepared
+            Craving something delicious? We’ve got you covered. Freshly prepared
             meals, delivered right to your doorstep.
           </p>
+
           <a
             href="#about"
             className="inline-block bg-sunset text-white text-lg px-8 py-4 rounded-lg hover:bg-jellyBeanBlue transition"
           >
-            Know About Us
+            Know&nbsp;About&nbsp;Us
           </a>
         </div>
 
-        {/* Right: Extra Large Animated Logo */}
+        {/* Right: Extra-large animated logo */}
         <div className="flex-1 flex justify-center">
           <div
             className={`w-[28rem] h-[28rem] rounded-full overflow-hidden shadow-2xl border-[8px] border-sunset transform transition-all duration-1000 ease-out ${
